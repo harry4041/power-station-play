@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Power Station (prototype)</title>
+  <script type="module" crossorigin src="./assets/index-BTq2sS1X.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-DsaV_Ear.css">
+</head>
+<body>
+<div id="top">
+  <b id="money">£0</b>
+  <span><span class="dim">Income</span> <span id="net">£0/s</span></span>
+  <span class="dim" id="detail"></span>
+  <div class="tools">
+    <button id="zoom-out" title="Zoom out">−</button>
+    <button id="zoom-in" title="Zoom in">+</button>
+    <button id="fit" title="Zoom to fit everything">Fit</button>
+    <button id="tidy" title="Put every part back in its default place">Tidy layout</button>
+    <span class="sep"></span>
+    <button id="export">Export save</button>
+    <button id="import">Import save</button>
+    <button id="reset">Reset</button>
+  </div>
+</div>
+<div id="pal"></div>
+<canvas id="c"></canvas>
+<div id="side"></div>
+
+<div id="toast" role="status"></div>
+
+<dialog id="io">
+  <h3 id="io-title"></h3>
+  <p id="io-help"></p>
+  <textarea id="io-text" spellcheck="false"></textarea>
+  <div id="io-msg"></div>
+  <div class="btns">
+    <button id="io-copy">Copy</button>
+    <button id="io-load">Load this save</button>
+    <button id="io-close" class="gap">Close</button>
+  </div>
+</dialog>
+
+</body>
+</html>
